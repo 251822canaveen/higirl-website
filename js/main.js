@@ -22,6 +22,20 @@ tabs.forEach(tab => {
   });
 });
 
+// Before & After filter tabs
+const baTabs = document.querySelectorAll('#baTabs .tab');
+const baCards = document.querySelectorAll('.ba-card');
+baTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    baTabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const cat = tab.dataset.batab;
+    baCards.forEach(card => {
+      card.classList.toggle('ba-hidden', cat !== 'all' && card.dataset.bacat !== cat);
+    });
+  });
+});
+
 // Reveal on scroll
 const revealEls = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {

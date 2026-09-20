@@ -37,6 +37,7 @@
     <nav class="main-nav" id="mainNav">
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#before-after">Before &amp; After</a>
       <a href="#team">Our Team</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Follow Us</a>
@@ -48,6 +49,14 @@
     </button>
   </div>
 </header>
+
+<!-- Promo ribbon -->
+<div class="promo-ribbon">
+  <div class="container promo-ribbon-inner">
+    <span>✨ Free Skin &amp; Hair Consultation on Your First Visit</span>
+    <a href="tel:+919493079179">Claim Now →</a>
+  </div>
+</div>
 
 <!-- Hero -->
 <section class="hero" id="home">
@@ -221,6 +230,44 @@
   </div>
 </section>
 
+<!-- Before & After -->
+<section class="before-after" id="before-after">
+  <div class="container">
+    <p class="eyebrow center reveal">Real Clients, Real Results</p>
+    <h2 class="center reveal">Before &amp; After</h2>
+    <p class="section-sub center reveal">Genuine transformations from clients treated at Hi Girl. Individual results vary by skin/hair type, condition and number of sessions.</p>
+
+    <div class="tabs reveal" id="baTabs">
+      <button class="tab active" data-batab="all">All</button>
+      <button class="tab" data-batab="hair">Hair &amp; Scalp</button>
+      <button class="tab" data-batab="skin">Skin &amp; Face</button>
+      <button class="tab" data-batab="aesthetics">Lips &amp; Aesthetics</button>
+      <button class="tab" data-batab="body">Body &amp; Weight</button>
+    </div>
+
+    <div class="ba-grid">
+      <figure class="ba-card reveal" data-bacat="hair"><img src="assets/img/before-after/ba-hair-1.jpg" alt="Hair regrowth before and after at Hi Girl"><figcaption>Hair Density — GFC Therapy</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="hair"><img src="assets/img/before-after/ba-hair-2.jpg" alt="Hair regrowth before and after"><figcaption>Hair Regrowth Progress</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="hair"><img src="assets/img/before-after/ba-hair-3.jpg" alt="Hair growth result after 3 months"><figcaption>Result After 3 Months</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="hair"><img src="assets/img/before-after/ba-hair-4.jpg" alt="Hair growth after single GFC session"><figcaption>Single Session GFC</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="skin"><img src="assets/img/before-after/ba-acne-1.jpg" alt="Acne treatment progress"><figcaption>Acne Treatment Progress</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="skin"><img src="assets/img/before-after/ba-acne-2.jpg" alt="Acne before and after"><figcaption>Acne Clearance</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="skin"><img src="assets/img/before-after/ba-pigmentation-1.jpg" alt="Pigmentation and melasma before and after"><figcaption>Pigmentation &amp; Melasma</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="skin"><img src="assets/img/before-after/ba-pigmentation-2.jpg" alt="Skin brightening before and after"><figcaption>Skin Brightening</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="skin"><img src="assets/img/before-after/ba-pigmentation-3.jpg" alt="Complexion improvement before and after"><figcaption>Complexion Correction</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="skin"><img src="assets/img/before-after/ba-undereye-1.jpg" alt="Under eye dark circles PRF before and after"><figcaption>Under-Eye PRF, 2nd Session</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="skin"><img src="assets/img/before-after/ba-undereye-2.jpg" alt="Under eye rejuvenation before and after"><figcaption>Under-Eye Rejuvenation</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="aesthetics"><img src="assets/img/before-after/ba-lips-1.jpg" alt="Lip filler before and after"><figcaption>Lip Enhancement</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="aesthetics"><img src="assets/img/before-after/ba-lips-2.jpg" alt="Lip filler result before and after"><figcaption>Lip Filler Result</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="body"><img src="assets/img/before-after/ba-doublechin-1.jpg" alt="Double chin reduction before and after"><figcaption>Double Chin Transformation</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="body"><img src="assets/img/before-after/ba-weightloss-1.jpg" alt="Weight loss transformation"><figcaption>Weight Management Journey</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="body"><img src="assets/img/before-after/ba-weightloss-2.jpg" alt="Weight loss before and after, 81kg to 71kg"><figcaption>81kg → 71kg</figcaption></figure>
+      <figure class="ba-card reveal" data-bacat="body"><img src="assets/img/before-after/ba-weightloss-3.jpg" alt="Weight management transformation"><figcaption>Weight Management Journey</figcaption></figure>
+    </div>
+    <p class="ba-disclaimer reveal">*Results are not typical. Individual results may vary based on skin/hair condition, lifestyle and number of sessions taken.</p>
+  </div>
+</section>
+
 <!-- Team -->
 <section class="team" id="team">
   <div class="container">
@@ -376,6 +423,28 @@
 <!-- Floating WhatsApp -->
 <a href="https://wa.me/919493079179" target="_blank" rel="noopener" class="fab-whatsapp" aria-label="Chat on WhatsApp">💬</a>
 
+<!-- Chatbot -->
+<div class="chatbot" id="chatbot">
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-header-text">
+        <strong>Hi Girl Assistant</strong>
+        <span>Ask us anything · 24/7</span>
+      </div>
+      <button id="chatbotClose" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages"></div>
+    <div class="chatbot-quickreplies" id="chatbotQuickReplies"></div>
+    <form class="chatbot-input" id="chatbotForm">
+      <input type="text" id="chatbotInput" placeholder="Type your question..." autocomplete="off">
+      <button type="submit" aria-label="Send">➤</button>
+    </form>
+  </div>
+  <button class="chatbot-launcher" id="chatbotLauncher" aria-label="Chat with us">
+    <span class="chatbot-launcher-icon">🤖</span>
+  </button>
+</div>
+
 <!-- Price list lightbox -->
 <div class="lightbox" id="priceLightbox">
   <div class="lightbox-inner">
@@ -384,6 +453,8 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>
