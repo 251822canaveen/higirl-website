@@ -180,8 +180,20 @@ ul{margin:0;padding:0;list-style:none;}
 .svc-card h3{font-size:1.1rem;margin-bottom:.4em;}
 .svc-card p{font-size:.88rem;color:var(--ink-soft);margin-bottom:.9em;}
 .svc-card span{font-weight:600;color:var(--maroon);font-size:.92rem;}
+.svc-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:.5em;}
+.price-old{font-weight:500;color:var(--ink-soft);font-size:.85rem;text-decoration:line-through;text-decoration-color:var(--gold);opacity:.75;}
+.price-new{font-weight:700;color:var(--maroon);font-size:1.08rem;}
+.price-badge{
+  display:inline-block;background:linear-gradient(120deg,var(--gold),var(--gold-light));color:var(--maroon-dark);
+  font-size:.68rem;font-weight:700;letter-spacing:.03em;padding:.2em .55em;border-radius:999px;text-transform:uppercase;
+}
 .price-list-cta{text-align:center;margin-top:3rem;}
 .price-list-cta p{color:var(--ink-soft);margin-bottom:.8em;}
+.promo-banner{
+  display:inline-flex;align-items:center;gap:.5em;background:var(--maroon);color:#fff;font-weight:700;
+  letter-spacing:.03em;padding:.6em 1.4em;border-radius:999px;margin:1.5rem auto 0;font-size:.95rem;
+}
+.promo-banner strong{color:var(--gold-light);font-size:1.05em;}
 
 /* Before & After */
 .before-after{padding:6rem 0;background:var(--blush);}
