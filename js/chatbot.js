@@ -7,7 +7,7 @@
   const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
   const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
   const CLINIC_EMAIL = "higirlskincare@gmail.com";
-  const CLINIC_PHONE = "+919493079179";
+  const CLINIC_PHONE = "+919989296762";
 
   let emailjsReady = false;
   try {
@@ -19,9 +19,9 @@
 
   // ---- FAQ KNOWLEDGE BASE (prefilled answers) ----
   const FAQS = [
-    { keys: ["hour", "time", "open", "close", "timing"], a: "We're open daily from 10:00 AM to 8:00 PM. We'd recommend calling ahead on +91 94930 79179 to book your slot." },
+    { keys: ["hour", "time", "open", "close", "timing"], a: "We're open daily from 10:00 AM to 8:00 PM. We'd recommend calling ahead on +91 99892 96762 to book your slot." },
     { keys: ["address", "location", "where", "direction", "map"], a: "We're located at 3rd Floor, Above KFC, Opposite Vaishaki Skyline, Yendada Main Road, Visakhapatnam, Andhra Pradesh – 530045. Here's the map: see the 'Location' section on this page!" },
-    { keys: ["phone", "number", "contact", "call"], a: "You can reach us at +91 94930 79179, or tap the WhatsApp button in the corner for a quick chat." },
+    { keys: ["phone", "number", "contact", "call"], a: "You can reach us at +91 99892 96762 (or +91 94930 79179), or tap the WhatsApp button in the corner for a quick chat." },
     { keys: ["doctor", "suresh", "naik", "dermatologist"], a: "Dr. Suresh Naik is our Clinical Dermatologist & Aesthetic Physician with 15+ years of experience, specialising in skin, hair and cosmetic procedures." },
     { keys: ["teja", "trichologist", "hair specialist", "hair fall doctor"], a: "Dr. Teja is our Trichologist, trained at the Indian Institute of Cosmetology, Trichology & Nutrition (IICTN), Mumbai — she leads all hair & scalp treatments." },
     { keys: ["hydrafacial", "hydra facial"], a: "HydraFacial (deep cleansing, exfoliation & hydration) ranges from ₹2,500 – ₹12,000 depending on the package. Want to book a consultation?" },
@@ -35,10 +35,10 @@
     { keys: ["double chin"], a: "Double Chin Reduction is priced ₹8,000 – ₹60,000 depending on sessions needed — we have a real client transformation in our Before & After gallery for this!" },
     { keys: ["bridal", "wedding", "bride"], a: "Yes! We offer a Bridal Glow Laser Toning package (₹10,000 – ₹50,000+) along with microblading, lip tinting and skin prep treatments — best booked 2-3 months before the big day." },
     { keys: ["price", "cost", "rate", "charge", "fee"], a: "Prices vary by treatment, area and number of sessions. Tap 'View Full Price Guide' in the Services section for our complete price list, or ask me about a specific treatment!" },
-    { keys: ["book", "appointment", "consult", "slot", "schedule"], a: "You can book by calling +91 94930 79179, messaging us on WhatsApp, or filling the contact form on this page — we'll confirm your slot shortly." },
+    { keys: ["book", "appointment", "consult", "slot", "schedule"], a: "You can book by calling +91 99892 96762, messaging us on WhatsApp, or filling the contact form on this page — we'll confirm your slot shortly." },
     { keys: ["safe", "hygien", "clean", "sterile"], a: "Absolutely — every treatment room is doctor-supervised with hygiene protocols, and we do a skin/scalp analysis before any procedure. Trust, transparency and transformation is our motto." },
     { keys: ["instagram", "social", "facebook"], a: "Follow us on Instagram @higirl_skin for real before/afters and offers!" },
-    { keys: ["free", "consultation", "trial"], a: "Yes, we offer a free skin & hair consultation on your first visit! Call +91 94930 79179 or WhatsApp us to book yours." },
+    { keys: ["free", "consultation", "trial"], a: "Yes, we offer a free skin & hair consultation on your first visit! Call +91 99892 96762 or WhatsApp us to book yours." },
     { keys: ["service", "treatment", "offer", "what do you"], a: "We offer HydraFacial, laser hair reduction, PRP/GFC hair therapy, Botox, chemical peels, body contouring, bridal packages and more — check the 'Services' section above for the full list with pricing!" },
   ];
 
@@ -103,7 +103,7 @@
 
   function finishLeadCapture() {
     const fullTranscript = transcript.map(m => `[${m.time}] ${m.sender === 'user' ? 'Visitor' : 'Bot'}: ${m.text}`).join('\n');
-    addMessage(`Thanks ${leadData.name}! We've forwarded your details to our team — they'll call you at ${leadData.phone} shortly. You can also reach us directly at +91 94930 79179.`, 'bot');
+    addMessage(`Thanks ${leadData.name}! We've forwarded your details to our team — they'll call you at ${leadData.phone} shortly. You can also reach us directly at +91 99892 96762.`, 'bot');
 
     if (emailjsReady) {
       emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {

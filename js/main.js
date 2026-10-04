@@ -66,5 +66,5 @@ contactForm.addEventListener('submit', (e) => {
   const service = data.get('service') || '';
   const message = data.get('message') || '';
   const text = `Hi Hi Girl Advanced Cosmetology Center, I'd like to book a consultation.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AInterested in: ${encodeURIComponent(service)}%0AMessage: ${encodeURIComponent(message)}`;
-  window.open(`https://wa.me/919493079179?text=${text}`, '_blank');
+  window.open(`https://wa.me/919989296762?text=${text}`, '_blank');
 });
