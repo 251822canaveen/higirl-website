@@ -48,14 +48,6 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 revealEls.forEach(el => io.observe(el));
 
-// Price list lightbox
-const priceLightbox = document.getElementById('priceLightbox');
-document.getElementById('openPriceList').addEventListener('click', () => priceLightbox.classList.add('open'));
-document.getElementById('closePriceList').addEventListener('click', () => priceLightbox.classList.remove('open'));
-priceLightbox.addEventListener('click', (e) => {
-  if (e.target === priceLightbox) priceLightbox.classList.remove('open');
-});
-
 // Contact form -> WhatsApp
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
