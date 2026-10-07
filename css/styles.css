@@ -180,20 +180,8 @@ ul{margin:0;padding:0;list-style:none;}
 .svc-card h3{font-size:1.1rem;margin-bottom:.4em;}
 .svc-card p{font-size:.88rem;color:var(--ink-soft);margin-bottom:.9em;}
 .svc-card span{font-weight:600;color:var(--maroon);font-size:.92rem;}
-.svc-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:.5em;}
-.price-old{font-weight:500;color:var(--ink-soft);font-size:.85rem;text-decoration:line-through;text-decoration-color:var(--gold);opacity:.75;}
-.price-new{font-weight:700;color:var(--maroon);font-size:1.08rem;}
-.price-badge{
-  display:inline-block;background:linear-gradient(120deg,var(--gold),var(--gold-light));color:var(--maroon-dark);
-  font-size:.68rem;font-weight:700;letter-spacing:.03em;padding:.2em .55em;border-radius:999px;text-transform:uppercase;
-}
 .price-list-cta{text-align:center;margin-top:3rem;}
 .price-list-cta p{color:var(--ink-soft);margin-bottom:.8em;}
-.promo-banner{
-  display:inline-flex;align-items:center;gap:.5em;background:var(--maroon);color:#fff;font-weight:700;
-  letter-spacing:.03em;padding:.6em 1.4em;border-radius:999px;margin:1.5rem auto 0;font-size:.95rem;
-}
-.promo-banner strong{color:var(--gold-light);font-size:1.05em;}
 
 /* Before & After */
 .before-after{padding:6rem 0;background:var(--blush);}
@@ -295,20 +283,6 @@ ul{margin:0;padding:0;list-style:none;}
   position:fixed;bottom:22px;right:22px;width:56px;height:56px;border-radius:50%;
   background:#25D366;display:flex;align-items:center;justify-content:center;font-size:1.6rem;
   box-shadow:0 12px 24px -8px rgba(0,0,0,.4);z-index:200;
-}
-
-/* Lightbox */
-.lightbox{
-  position:fixed;inset:0;background:rgba(8,18,15,.9);display:none;align-items:flex-start;justify-content:center;
-  z-index:300;padding:64px 24px 24px;overflow-y:auto;
-}
-.lightbox.open{display:flex;}
-.lightbox-inner{position:relative;max-width:900px;width:100%;margin:0 auto;}
-.lightbox-inner img{border-radius:10px;width:100%;display:block;}
-.lightbox-close{
-  position:fixed;top:16px;right:16px;background:rgba(8,18,15,.7);border:none;color:#fff;font-size:1.8rem;
-  line-height:1;width:44px;height:44px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;
-  z-index:301;
 }
 
 /* Chatbot */
